@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "fff61bf5-3082-497b-abd1-8c470d471e46",
+		"name": "userroles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14716260"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"srini\",\n    \"email\": \"srini@gmail.com\",\n    \"password\": \"test123\",\n    \"role\":[\"mod\", \"user\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8042/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8042",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"srini\",\n    \"password\": \"test123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8042/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "8042",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testcontroller all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"srini\",\n    \"email\": \"srini@gmail.com\",\n    \"password\": \"test123\",\n    \"role\":[\"mod\", \"user\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8042/api/test/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8042",
+					"path": [
+						"api",
+						"test",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testcontroller admin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"srini\",\n    \"email\": \"srini@gmail.com\",\n    \"password\": \"test123\",\n    \"role\":[\"mod\", \"user\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8042/api/test/admin",
+					"host": [
+						"localhost"
+					],
+					"port": "8042",
+					"path": [
+						"api",
+						"test",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testcontroller user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"srini\",\n    \"email\": \"srini@gmail.com\",\n    \"password\": \"test123\",\n    \"role\":[\"mod\", \"user\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8042/api/test/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8042",
+					"path": [
+						"api",
+						"test",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testcontroller moderator",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"srini\",\n    \"email\": \"srini@gmail.com\",\n    \"password\": \"test123\",\n    \"role\":[\"mod\", \"user\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8042/api/test/mod",
+					"host": [
+						"localhost"
+					],
+					"port": "8042",
+					"path": [
+						"api",
+						"test",
+						"mod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shopping",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2,\n    \"name\": \"butter cookies\",\n    \"price\": 20\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/shoppingItems",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shoppingItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shopping get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shoppingItems/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shoppingItems",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shopping Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"name\": \"cookies\",\n    \"price\": 20\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/shoppingItems",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shoppingItems"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
